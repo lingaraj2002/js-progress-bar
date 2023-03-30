@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background: linear-gradient(#e8f0f7 50%,#4d5bf9 50%);
+
+}
+.container{
+    height: 400px;
+    width: 400px;
+    background-color: white;
+    position: absolute;
+    transform: translate(-50% , -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 8px;
+    box-shadow:0 0 10px rgb(108, 107, 109);
+    display: grid;
+    place-items: center; 
+}
+.circular-progress{
+    position: relative;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%; 
+    display: grid;
+    place-items: center;  
+}
+.circular-progress::before{
+    content: "";
+    position: absolute;
+    height: 84%;
+    width: 84%;
+    background-color: white;
+    border-radius: 50%;
+}
+.value-container{
+    position: relative;
+    font-family: "poppins",sans-serif;
+    font-size: 50px;
+    color: #231c3d;
+}
